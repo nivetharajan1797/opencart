@@ -1,0 +1,19 @@
+package Numbers;
+
+public class amstrong {
+
+	public static void main(String[] args) {
+
+		int am = 2345;
+		int d;
+		double rev =0;
+		while(am>0)
+		{
+			d = am%10;
+			rev = rev*10 + Math.pow(rev, 3);
+			am = am/10;
+		}
+		
+	}
+
+}

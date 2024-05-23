@@ -1,0 +1,10 @@
+package May12;
+
+public class remove_leading_zeros_in_string {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

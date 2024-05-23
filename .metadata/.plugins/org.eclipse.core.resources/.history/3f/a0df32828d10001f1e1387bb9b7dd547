@@ -1,0 +1,21 @@
+package May12;
+
+public class remove_leading_zeros_in_string {
+
+	public static void main(String[] args) {
+
+		String le="00110011";
+		StringBuffer sb = new StringBuffer();
+		for(int i=0;i<le.length();i++)
+		{
+			char c=le.charAt(i);
+			if(c==0)
+			{
+				sb.append("");
+			}
+			
+		}
+		System.out.println(sb);
+	}
+
+}

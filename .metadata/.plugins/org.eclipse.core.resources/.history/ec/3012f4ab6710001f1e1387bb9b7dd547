@@ -1,0 +1,21 @@
+package May12;
+
+public class reverse_string {
+
+	public static void main(String[] args)
+	{
+		String s ="India";
+		String rev = "";
+		char ch;
+		for(int i=0;i<s.length();i++) {
+			
+			ch = s.charAt(i);
+			System.out.println(ch);
+
+			rev = ch + rev;
+			
+		}
+		System.out.println(rev);
+		
+	}
+}

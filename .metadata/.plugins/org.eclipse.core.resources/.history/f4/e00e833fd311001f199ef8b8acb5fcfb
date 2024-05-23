@@ -1,0 +1,30 @@
+package Numbers;
+
+import java.util.Scanner;
+
+public class fibonnaci {
+
+	public static void main(String[] args)
+	{
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter number1 : ");
+		int n1 = sc.nextInt();
+		System.out.println("Enter number2 : ");
+		int n2 = sc.nextInt();
+		System.out.println("Enter limit : ");
+		int lim = sc.nextInt();
+		
+		int count=0,n3 = 0;
+		System.out.println("Fibonnaci numbers: "+n1+" "+n2);
+		while(n3<=lim)
+		{
+			
+			n3 = n1 + n2;
+			n1 = n2;
+			n2 = n3;
+			count ++;
+			System.out.println(n3 + "\s");
+		}
+	}
+}

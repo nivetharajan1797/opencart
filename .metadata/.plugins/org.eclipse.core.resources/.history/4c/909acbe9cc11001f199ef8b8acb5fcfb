@@ -1,0 +1,32 @@
+package Numbers;
+
+public class prime {
+
+	public static void main(String[] args)
+	{
+		
+		int a = 70,count=0;
+	
+		if(a>1)
+		{
+			for(int i=2;i<a;i++)
+			{
+				int d = a/i;
+				count++;
+			}
+			
+			if(count != 0)
+			{
+				System.out.println("prime number");
+			}
+			else
+			{
+				System.out.println("not a prime number");
+			}
+		}
+		else {
+			
+			System.out.println("Number is less than 1");
+		}
+	}
+}

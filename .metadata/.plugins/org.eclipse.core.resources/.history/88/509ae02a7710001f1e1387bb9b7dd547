@@ -1,0 +1,35 @@
+package May12;
+
+public class remove_multi_spaces_in_string {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str = "My           Name    is    Nivetha    ";
+		StringBuffer stringBuffer = new StringBuffer();
+		Boolean isWhiteSpace = false;
+		for(char c : str.toCharArray())
+		{
+			if(Character.isWhitespace(c))
+			{
+				if(!isWhiteSpace)
+				{
+					stringBuffer.append(' ');
+					
+					
+					isWhiteSpace = true;
+				}
+			}
+				else
+				{
+					stringBuffer.append(c);
+					System.out.println(stringBuffer);
+					isWhiteSpace = false;
+				}
+			}
+		System.out.println(stringBuffer);
+		}
+		
+	}
+
+
